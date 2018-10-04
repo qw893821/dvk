@@ -3,7 +3,7 @@ This is a shooting game about a dragon fright with knight. It will have two mode
 The display method is used to show the button and it is a void type. In this method, it would contain a rollover check to change the color.
 
 The internalClickCheck method is used to check the mouse position and determine which mode play selected. It would have the code like this:
-		Boolean internalClickCheck() {
+		Boolean internalClickCheck() { 
 			If ((mouseClicked==true) &&(mouseX>topleftx ) &&(mouseX<bottomrightx)&&(mouseY>topleftY)&&(mouseY<bottomrighty))
 				{
 					Return true;
