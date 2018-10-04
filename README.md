@@ -1,6 +1,7 @@
 # dvk
 This is a shooting game about a dragon fright with knight. It will have two modes. I would create a class called Button to achieve it. This class would have several methods like display and internalClickCheck.
 The display method is used to show the button and it is a void type. In this method, it would contain a rollover check to change the color.
+
 The internalClickCheck method is used to check the mouse position and determine which mode play selected. It would have the code like this:
 		Boolean internalClickCheck() {
 			If ((mouseClicked==true) &&(mouseX>topleftx ) &&(mouseX<bottomrightx)&&(mouseY>topleftY)&&(mouseY<bottomrighty))
@@ -9,6 +10,7 @@ The internalClickCheck method is used to check the mouse position and determine 
 				}
 			Else {return false;}
 			}
+			
 I would two objects of this class to show the mode select button. This part will show on the start screen.
 
 Enemy class.
@@ -52,10 +54,14 @@ Another important code about fire ball is about the interaction of the enemies. 
 			}
 		}
 	}
+	
 When they intersect with each, I want just shorten the array to save memory. This is a method I learned from my undergraduate study.
 Score
+
 The score will not exhibit until game overs. In the time based, the score adds based on the time player played and the enemies number player had destroyed.
+
 In the challenge mode, there will be no time limitation in this game. However, it would still contain a hidden timer which help calculate the score.
+
 End screen
 This screen would appear when game is over. There will be a score show at the middle of the screen and exhibit the image of the knights I used in this game. 
 Furthermore, an image would locate at the bottom of the screen, if player click the image, this game will restart.
